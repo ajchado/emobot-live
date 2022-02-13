@@ -25,7 +25,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 SECRET_KEY = 'django-insecure-@y5a0lzy+yma%i6gzhd^ax3!$13e^df#f7jh2fjxwfem5dmac='
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['web-emobot.herokuapp.com','127.0.0.1']
 
