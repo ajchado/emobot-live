@@ -140,7 +140,7 @@ class registerView(View):
                     sub = PersonForm(request.POST)
                     code = User.objects.make_random_password(length=10, allowed_chars='abcdefghjkmnpqrstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ23456789')
                     subject = 'EmoBot Activate Account' 
-                    message = 'Activation Code: %s \nActivation Link: http://127.0.0.1:8000/emobot/activate/' %code
+                    message = 'Activation Code: %s \nActivation Link: https://web-emobot.herokuapp.com/emobot/activate/' %code
                     recepient = str(sub['email'].value())
                     send_mail(subject, 
                     message, EMAIL_HOST_USER, [recepient], fail_silently = False)
